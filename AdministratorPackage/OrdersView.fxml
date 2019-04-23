@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.79" prefHeight="510.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorPackage.OrdersController">
+    <children>
+        <ImageView fitHeight="591.0" fitWidth="1043.0" layoutY="2.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/blend.jpg" />
+         </image></ImageView>
+        <AnchorPane layoutY="-1.0" prefHeight="510.0" prefWidth="644.0">
+            <children>
+                <TableView fx:id="dishTable1" layoutX="87.0" layoutY="181.0" prefHeight="322.0" prefWidth="469.0">
+                    <columns>
+                        <TableColumn fx:id="colDishId1" prefWidth="50.00006103515625" text="id" />
+                        <TableColumn fx:id="colDishName1" prefWidth="158.66668701171875" text="name" />
+                        <TableColumn fx:id="colDishPrice1" prefWidth="95.33334350585938" text="price" />
+                        <TableColumn fx:id="colDishRid1" prefWidth="50.0" text="r_id" />
+                    </columns>
+                </TableView>
+            <Label layoutX="237.0" layoutY="109.0" text="Pending Orders" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei" size="23.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutX="644.0" layoutY="1.0" opacity="0.71" prefHeight="506.0" prefWidth="254.0" style="-fx-background-color: #c18640;">
+         <children>
+            <Label layoutX="27.0" layoutY="32.0" text="Administrator Page" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="461.0" text="Copyright. All rights reserved" textFill="WHITE" />
+            <Label layoutX="118.0" layoutY="488.0" text="2019" textFill="#fff9f9">
+               <font>
+                  <Font name="Microsoft JhengHei" size="9.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="17.0" layoutY="371.0" mnemonicParsing="false" onAction="#return_back" opacity="0.76" prefHeight="65.0" prefWidth="219.0" style="-fx-background-color: #3c0b01;" text="Return" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Microsoft JhengHei" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
